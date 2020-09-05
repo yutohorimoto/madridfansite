@@ -33,7 +33,7 @@ function readCsv(data) {
       
     
 //var csvfile = './news.csv';
-var csvfile = 's3://realmadridsite/news.csv';
+var csvfile = "https://realmadridsite.s3-us-west-2.amazonaws.com/news.csv";
 
 $(function(){
 	$.get(csvfile, readCsv, 'text');
