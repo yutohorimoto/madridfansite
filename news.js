@@ -32,8 +32,8 @@ function readCsv(data) {
 
       
     
-var csvfile = './news.csv';
-
+//var csvfile = './news.csv';
+var csvfile = 's3://realmadridsite/news.csv';
 
 $(function(){
 	$.get(csvfile, readCsv, 'text');
