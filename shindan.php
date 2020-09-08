@@ -23,44 +23,28 @@
   <li><a href="shindan.php">Diagnosis</a></li>
 </ul>
 </nav>
-
-<form method="post" action="poll.php">
-あなたがレアルマドリードに獲得を望む選手は？<br><br>
-<?php
-$players = array('ムバッペ', 'ハーランド', 'ネイマール',
-  'ディバラ', 'その他');
-for ($i = 0; $i < count($players); $i++) {
-  print "<input type='radio' name='cn' value='$i'>{$players[$i]}<br>\n";
-}
-?>
-<br>
-<input type="submit" name="submit" value="投票">
+<h3>あなたにおすすめのチームを診断します</h3>
+<form method="post" action="shindan_result.php">
+    <h2>第一問</h2>
+    <p>攻撃的なチームと守備的なチームどちらが好きですか？</p>
+    <input type="radio" name="q1" value="1"> 攻撃的<br>
+    <input type="radio" name="q1" value="2"> バランス<br>
+    <input type="radio" name="q1" value="3"> 守備的<br>
+    <br>
+    <h2>第二問</h2>
+    <p>攻撃的なチームと守備的なチームどちらが好きですか？</p>
+    <input type="radio" name="q2" value="1"> ポゼッション<br>
+    <input type="radio" name="q2" value="2"> バランス<br>
+    <input type="radio" name="q2" value="3"> カウンター<br>
+    <br>
+    <h2>第三問</h2>
+    <p>どちらのチームスタイルが好きですか？</p>
+    <input type="radio" name="q3" value="1"> 情熱<br>
+    <input type="radio" name="q3" value="2"> 冷静<br>
+    <br>
+    
+<input type="submit" name="submit" value="結果を見る">
 </form>
-<table border='1'>
-<?php
-$ed = file('que.txt');
-for ($i = 0; $i < count($players); $i++) $ed[$i] = rtrim($ed[$i]);
-if ($_POST['submit']) {
-  $ed[$_POST['cn']]++;
-  $fp = fopen('que.txt', 'w');
-  for ($i = 0; $i < count($players); $i++) {
-    fwrite($fp, $ed[$i] . "\n");
-  }
-  fclose($fp);
-}
-
-for ($i = 0; $i < count($players); $i++) {
-  print "<tr>";
-  print "<td>{$players[$i]}</td>";
-  print "<td><table><tr>";
-  $w = $ed[$i] * 10;
-  print "<td width='$w' bgcolor='blue'> </td>";
-  print "<td>{$ed[$i]} 票</td>";
-  print "</tr></table></td>";
-  print "</tr>\n";
-}
-?>
-</table>
 <footer>
 <small>Copyright&copy; <a href="index.html">SIMPLE SITE</a> All Rights Reserved.</small>
 <span class="pr">《<a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>

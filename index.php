@@ -20,7 +20,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="realmadridHome2.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">
@@ -31,6 +31,7 @@
 <li><a href="news.php">News</a></li>
 <li><a href="quiz.php">Quiz</a></li>
 <li><a href="poll.php">Poll</a></li>
+<li><a href="shindan.php">Diagnosis</a></li>
 </ul>
 </nav>
 
