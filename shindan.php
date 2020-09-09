@@ -23,27 +23,51 @@
   <li><a href="shindan.php">Diagnosis</a></li>
 </ul>
 </nav>
-<h3>あなたにおすすめのチームを診断します</h3>
+<h3>あなたにおすすめのチームを欧州５大リーグ２４チームの中から選定します。</h3>
 <form method="post" action="shindan_result.php">
     <h2>第一問</h2>
-    <p>攻撃的なチームと守備的なチームどちらが好きですか？</p>
-    <input type="radio" name="q1" value="1"> 攻撃的<br>
-    <input type="radio" name="q1" value="2"> バランス<br>
-    <input type="radio" name="q1" value="3"> 守備的<br>
+    <p>攻撃的なチーム(5)と守備的なチーム(1)どちらが好きですか？</p>
+    <input type="radio" name="q1" value="5"> 5(攻撃的）<br>
+    <input type="radio" name="q1" value="4"> 4<br>
+    <input type="radio" name="q1" value="3"> 3<br>
+    <input type="radio" name="q1" value="2"> 2<br>
+    <input type="radio" name="q1" value="1"> 1（守備的）<br>
     <br>
     <h2>第二問</h2>
-    <p>攻撃的なチームと守備的なチームどちらが好きですか？</p>
-    <input type="radio" name="q2" value="1"> ポゼッション<br>
-    <input type="radio" name="q2" value="2"> バランス<br>
-    <input type="radio" name="q2" value="3"> カウンター<br>
+    <p>ポゼッション(5)とカウンター(1)どちらが好きですか？</p>
+    <input type="radio" name="q2" value="5"> 5(ポゼッション)<br>
+    <input type="radio" name="q2" value="4"> 4<br>
+    <input type="radio" name="q2" value="3"> 3<br>
+    <input type="radio" name="q2" value="2"> 2<br>
+    <input type="radio" name="q2" value="1"> 1（カウンター）<br>
     <br>
     <h2>第三問</h2>
-    <p>どちらのチームスタイルが好きですか？</p>
-    <input type="radio" name="q3" value="1"> 情熱<br>
-    <input type="radio" name="q3" value="2"> 冷静<br>
+    <p>テクニック(5)とフィジカル(1)どちらを重視しますか？</p>
+    <input type="radio" name="q3" value="5"> 5（テクニック）<br>
+    <input type="radio" name="q3" value="4"> 4<br>
+    <input type="radio" name="q3" value="3"> 3<br>
+    <input type="radio" name="q3" value="2"> 2<br>
+    <input type="radio" name="q3" value="1"> 1（フィジカル）<br>
+    <br>
+    <h2>第四問</h2>
+    <p>サポーターの多い人気なチームが好きですか？</p>
+    <input type="radio" name="q4" value="5"> 5（人気）<br>
+    <input type="radio" name="q4" value="4"> 4<br>
+    <input type="radio" name="q4" value="3"> 3<br>
+    <input type="radio" name="q4" value="2"> 2<br>
+    <input type="radio" name="q4" value="1"> 1（不人気）<br>
+    <br>
+      <h2>第五問</h2>
+    <p>戦術的なチーム(5)と自由なチーム(1)どちらが好きですか？</p>
+    <input type="radio" name="q5" value="5"> 5（戦術的）<br>
+    <input type="radio" name="q5" value="4"> 4<br>
+    <input type="radio" name="q5" value="3"> 3<br>
+    <input type="radio" name="q5" value="2"> 2<br>
+    <input type="radio" name="q5" value="1"> 1（自由）<br>
     <br>
     
 <input type="submit" name="submit" value="結果を見る">
+</form>
 </form>
 <footer>
 <small>Copyright&copy; <a href="index.html">SIMPLE SITE</a> All Rights Reserved.</small>

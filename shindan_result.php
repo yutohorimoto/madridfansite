@@ -27,44 +27,58 @@
     $q1 = $_POST['q1'];
     $q2 = $_POST['q2'];
     $q3 = $_POST['q3'];
+    $q4 = $_POST['q4'];
+    $q5 = $_POST['q5'];
     $result='';
-    $fav=[$result,$q1,$q2,$q3];
+    $fav=[$result,$q1,$q2,$q3,$q4,$q5];
   
-    $madrid=['レアルマドリード',2,2,1];
+    $madrid=['レアルマドリード',2,2,3,5,1];
 
-    $barcerona=['バルセロナ',1,1,1];
+    $barcerona=['バルセロナ',4,5,5,5,2];
 
-    $atletico=['アトレティコマドリード',3,3,1];
+    $atletico=['アトレティコマドリード',1,1,2];
    
-    $juventus=['ユベントス',3,3,2];
+    $juventus=['ユベントス',3,4,2,4,2];
     
-    $milan=['ミラン',3,2,1];
+    $milan=['ミラン',2,3,1,3,2];
     
-    $intel=['インテル',3,1,1];
+    $intel=['インテル',3,1,2,4,4];
     
-    $bayern=['バイエルン',2,1,2];
+    $bayern=['バイエルン',5,4,3,5,5];
     
-    $paris=['パリサンジェルマン',1,2,1];
+    $paris=['パリサンジェルマン',5,5,5,5,3];
     
-    $city=['マンチェスターシティ',1,1,2];
+    $city=['マンチェスターシティ',5,5,5,4,5];
     
-    $united=['マンチェスターユナイテッド',2,3,1];
+    $united=['マンチェスターユナイテッド',2,1,1,5,2];
    
-    $arsenal=['アーセナル',2,1,1];
+    $arsenal=['アーセナル',2,3,4,3,1];
     
-    $chelsea=['チェルシー',2,3,2];
+    $chelsea=['チェルシー',4,4,3,4,2];
     
-    $liverpool=['リヴァプール',1,3,1];
-    //122バイエルン
-    $bayern2=['バイエルン',1,2,2];
-    //132マドリー
-    $madrid2=['レアルマドリード',1,3,2];
-    //222マドリー
-    $madrid3=['レアルマドリード',2,2,2];
-    //312インテル
-    $intel2=['インテル',3,1,2];
-    //332アトレティコ
-    $atletico2=['アトレティコマドリード',3,1,2];
+    $liverpool=['リヴァプール',3,2,3,4,4];
+    
+    $sevilia=['セビージャ',1,3,4,2,4];
+
+    $spurs=['トッテナム',2,1,1,3,4];
+
+    $bvb=['ドルトムント',5,2,4,4,3];
+
+    $leipzig=['ライプツィヒ',4,5,2,1,5];
+
+    $atalanta=['アタランタ',5,5,4,1,4];
+
+    $napoli=['ナポリ',3,4,4,2,3];
+
+    $lazio=['ラツィオ',4,2,2,1,4];
+
+    $rome=['ローマ',4,3,3,3,3];
+
+    $marseille=['マルセイユ',2,4,3,1,2];
+
+    $lyon=['リヨン',1,2,2,2,2];
+
+    $borussia=['ボルシアMG',3,3,3,2,3];
     //if($_POST['submit']) {
     //if($q1 ==1 & $q2 ==1){
        // echo "マンチェスターシティ";
@@ -72,18 +86,21 @@
         //echo "バルセロナ";
     //};
     $teams=[$madrid,$barcerona,$atletico,$juventus,$milan,$intel,$bayern,$paris,$city,$united,$arsenal,$chelsea,$liverpool,
-    $bayern2,$madrid2,$madrid3,$intel2,$atletico2];
+    $sevilia,$spurs,$bvb,$leipzig,$atalanta,$napoli,$lazio,$rome,$marseille,$lyon,$borussia];
+
+    $distance=1000;
+    
 
     foreach($teams as $team){
-        if($team[1]==$fav[1] and $team[2]==$fav[2] and $team[3]==$fav[3]){
-            echo "あなたにおすすめのチームは $team[0] です";
-        }else{
-            echo '';
+        $dis=pow($team[1]-$fav[1],2)+pow($team[2]-$fav[2],2)+pow($team[3]-$fav[3],2)+pow($team[4]-$fav[4],2)+pow($team[5]-$fav[5],2);
+        if($dis<$distance){
+            $distance=$dis;
+            $result=$team[0];
         }
 
-        
-
     };
+
+    echo "あなたにおすすめのチームは $result です"
 
       ?>
 <footer>
