@@ -27,7 +27,7 @@
 <form method="post" action="shindan_result.php">
     <h2>第一問</h2>
     <p>攻撃的なチーム(5)と守備的なチーム(1)どちらが好きですか？</p>
-    <input type="radio" name="q1" value="5"> 5(攻撃的）<br>
+    <input type="radio" name="q1" value="5"> 5（攻撃的）<br>
     <input type="radio" name="q1" value="4"> 4<br>
     <input type="radio" name="q1" value="3"> 3<br>
     <input type="radio" name="q1" value="2"> 2<br>
@@ -35,7 +35,7 @@
     <br>
     <h2>第二問</h2>
     <p>ポゼッション(5)とカウンター(1)どちらが好きですか？</p>
-    <input type="radio" name="q2" value="5"> 5(ポゼッション)<br>
+    <input type="radio" name="q2" value="5"> 5（ポゼッション）<br>
     <input type="radio" name="q2" value="4"> 4<br>
     <input type="radio" name="q2" value="3"> 3<br>
     <input type="radio" name="q2" value="2"> 2<br>

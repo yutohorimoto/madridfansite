@@ -38,7 +38,7 @@
 
     $atletico=['アトレティコマドリード',1,1,2,3,5];
    
-    $juventus=['ユベントス',3,4,2,4,2];
+    $juventus=['ユベントス',3,4,3,4,2];
     
     $milan=['ミラン',2,3,1,3,2];
     
@@ -56,7 +56,7 @@
     
     $chelsea=['チェルシー',4,4,3,4,2];
     
-    $liverpool=['リヴァプール',3,2,3,4,4];
+    $liverpool=['リヴァプール',4,2,3,4,4];
     
     $sevilia=['セビージャ',1,3,4,2,4];
 
@@ -70,9 +70,9 @@
 
     $napoli=['ナポリ',3,4,4,2,3];
 
-    $lazio=['ラツィオ',4,2,2,1,4];
+    $lazio=['ラツィオ',3,2,2,1,4];
 
-    $rome=['ローマ',4,3,3,3,3];
+    $rome=['ローマ',4,3,2,3,3];
 
     $marseille=['マルセイユ',2,4,3,1,2];
 
@@ -85,7 +85,7 @@
     //}else{
         //echo "バルセロナ";
     //};
-    $teams=[$madrid,$barcerona,$atletico,$juventus,$milan,$intel,$bayern,$paris,$city,$united,$arsenal,$chelsea,$liverpool,
+    $teams=[$madrid,$barcerona,$atletico,$juventus,$bayern,$paris,$city,$united,$arsenal,$chelsea,$liverpool,$milan,$intel,
     $sevilia,$spurs,$bvb,$leipzig,$atalanta,$napoli,$lazio,$rome,$marseille,$lyon,$borussia];
 
     $distance=1000;
