@@ -38,12 +38,39 @@ for ($i = 0; $i < count($players); $i++) {
 </form>
 <table border='1'>
 <?php
-$ed = file('https://realmadridsite.s3-us-west-2.amazonaws.com/que.txt');
+#$client = new Aws\S3\S3Client([/** options **/]);
+
+  // Register the stream wrapper from an S3Client object
+#$client->registerStreamWrapper();
+use Aws\S3\S3Client;
+require_once 'vendor/autoload.php';
+//use vendor\aws\aws-sdk-php\src\S3\S3Client;
+//use Aws\Common\Enum\Region;
+define('S3', [  
+  'KEY'   => 'AKIAIGLTQ35B47APGSAA',
+  'PASS'  => 'F4FqUmRHAvAZLuHY5sZOEajoV8n59g+SPFOIiX8g',
+  'DIR'   => 's3://realmadridsite'
+]);
+
+$s3 = S3Client::factory([
+  'credentials' => [
+      'key'       => S3['KEY'],
+      'secret'    => S3['PASS'],
+      ],
+      'region' => 'us-west-2',
+  'version' => 'latest',
+]);
+$s3->registerStreamWrapper();
+
+
+//$ed = S3['DIR'].'/que.txt';
+$ed = file('s3://realmadridsite/que.txt');
 for ($i = 0; $i < count($players); $i++) $ed[$i] = rtrim($ed[$i]);
 if ($_POST['submit']) {
   $ed[$_POST['cn']]++;
   //$fp = fopen('que.txt', 'w');
-  $fp = fopen('https://realmadridsite.s3-us-west-2.amazonaws.com/que.txt', 'w');
+  $fp = fopen('s3://realmadridsite/que.txt', 'w');
+  //$fp = fopen($ed, 'w');
   for ($i = 0; $i < count($players); $i++) {
     fwrite($fp, $ed[$i] . "\n");
   }
