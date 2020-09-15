@@ -38,7 +38,7 @@ for ($i = 0; $i < count($players); $i++) {
 </form>
 <table border='1'>
 <?php
-$ed = file('que.txt');
+$ed = file('https://realmadridsite.s3-us-west-2.amazonaws.com/que.txt');
 for ($i = 0; $i < count($players); $i++) $ed[$i] = rtrim($ed[$i]);
 if ($_POST['submit']) {
   $ed[$_POST['cn']]++;
