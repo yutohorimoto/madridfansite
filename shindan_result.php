@@ -79,12 +79,8 @@
     $lyon=['リヨン',1,2,2,2,2];
 
     $borussia=['ボルシアMG',3,3,3,2,3];
-    //if($_POST['submit']) {
-    //if($q1 ==1 & $q2 ==1){
-       // echo "マンチェスターシティ";
-    //}else{
-        //echo "バルセロナ";
-    //};
+
+    
     $teams=[$madrid,$barcerona,$atletico,$juventus,$bayern,$paris,$city,$united,$arsenal,$chelsea,$liverpool,$milan,$intel,
     $sevilia,$spurs,$bvb,$leipzig,$atalanta,$napoli,$lazio,$rome,$marseille,$lyon,$borussia];
 

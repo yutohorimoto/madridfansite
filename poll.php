@@ -42,7 +42,8 @@ $ed = file('que.txt');
 for ($i = 0; $i < count($players); $i++) $ed[$i] = rtrim($ed[$i]);
 if ($_POST['submit']) {
   $ed[$_POST['cn']]++;
-  $fp = fopen('que.txt', 'w');
+  //$fp = fopen('que.txt', 'w');
+  $fp = fopen('https://realmadridsite.s3-us-west-2.amazonaws.com/que.txt', 'w');
   for ($i = 0; $i < count($players); $i++) {
     fwrite($fp, $ed[$i] . "\n");
   }
