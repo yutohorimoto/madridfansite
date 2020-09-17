@@ -29,7 +29,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">
@@ -48,11 +48,11 @@
 
 <h2>news</h2>
 <p>レアルマドリードに関する最新ニュースです。</p>
-
-<h2></h2>
 <table class="ta1">
 <tr>
 <th colspan="2" class="tamidashi"></th>
+
+
 
 <div class="table-responsive">
     <table class="table table-bordered">

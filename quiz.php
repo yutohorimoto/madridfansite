@@ -27,7 +27,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">

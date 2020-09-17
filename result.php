@@ -6,7 +6,7 @@
 <title>real madrid fansite</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<meta name="keywords" content="">
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/openclose.js"></script>
 
@@ -28,7 +28,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">

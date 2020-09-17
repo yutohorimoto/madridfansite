@@ -28,7 +28,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">
@@ -45,10 +45,10 @@
 
 <section>
 
-<h2>result</h2>
+<h2>Member</h2>
 <p>2019-2020シーズンのレアルマドリードのメンバーです。</p>
 
-<h2>メンバー</h2>
+
 <table class="ta1">
 <tr>
 <th colspan="2" class="tamidashi"></th>

@@ -9,7 +9,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">
@@ -25,7 +25,7 @@
 </nav>
 
 <form method="post" action="poll.php">
-あなたがレアルマドリードに獲得を望む選手は？<br><br>
+<h3>あなたがレアルマドリードに獲得を望む選手は？</h3><br>
 <?php
 $players = array('ムバッペ', 'ハーランド', 'ネイマール',
   'ディバラ', 'その他');
@@ -35,7 +35,7 @@ for ($i = 0; $i < count($players); $i++) {
 ?>
 <br>
 <input type="submit" name="submit" value="投票">
-</form>
+</form><br>
 <table border='1'>
 <?php
 #$client = new Aws\S3\S3Client([/** options **/]);

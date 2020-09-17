@@ -9,7 +9,7 @@
 <div id="container">
 
 <header>
-<h1 id="logo"><a href="index.html"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
+<h1 id="logo"><a href="index.php"><img src="images/reallogo.png" alt="Simple Site"></a></h1>
 </header>
 
 <nav id="menubar">
@@ -24,6 +24,7 @@
 </ul>
 </nav>
 <h3>あなたにおすすめのチームを欧州５大リーグ２４チームの中から選定します。</h3>
+<p>2019-2020シーズンの各チームのデータをもとに独断と偏見で作成したものです。ご注意ください。</p>
 <form method="post" action="shindan_result.php">
     <h2>第一問</h2>
     <p>攻撃的なチーム(5)と守備的なチーム(1)どちらが好きですか？</p>
