@@ -47,9 +47,9 @@ require_once 'vendor/autoload.php';
 //use vendor\aws\aws-sdk-php\src\S3\S3Client;
 //use Aws\Common\Enum\Region;
 define('S3', [  
-  'KEY'   => 'AKIAIGLTQ35B47APGSAA',
-  'PASS'  => 'F4FqUmRHAvAZLuHY5sZOEajoV8n59g+SPFOIiX8g',
-  'DIR'   => 's3://realmadridsite'
+  'KEY'   => '***',
+  'PASS'  => '***',
+  'DIR'   => '***'
 ]);
 
 $s3 = S3Client::factory([
